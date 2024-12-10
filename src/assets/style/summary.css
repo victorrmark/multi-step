@@ -1,0 +1,47 @@
+.double-check {
+  padding: 17px 15px;
+  background-color: var(--alabaster);
+  border-radius: 10px;
+}
+
+.summary {
+  margin-bottom: 10px;
+}
+
+.prices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.addon-prices {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.prices p:last-child {
+  color: var(--marine-blue);
+}
+
+.total {
+  margin-top: 20px;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.g-total {
+  font-size: 1.8rem;
+  color: var(--purple-blue);
+  font-weight: bold;
+}
+
+a:hover{
+  color: var(--marine-blue)
+}
+

@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--cool-gray)
+}
+
+:root{
+  --marine-blue: hsl(213, 96%, 18%);
+  --purple-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --strawberry-red: hsl(354, 84%, 57%);
+  --cool-gray: hsl(229, 9%, 61%);
+  --light-gray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#root {
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  background-image: url(./assets/images/bg-sidebar-mobile.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+}
+
+.pageNumber {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid var(--white);
+  color: var(--white);
+  font-size: 1.4rem;
+}
+
+.pageNumber.active {
+  background: var(--light-blue);
+  color: var(--marine-blue);
+  border: none;
+  font-weight: bold;
+  outline: none;
+}
+
+h2{
+  font-size: 2.5rem;
+  color: var(--marine-blue);
+  margin-bottom: 5px;
+}
+
+h3{
+  color: var(--marine-blue);
+  font-size: 1.8rem;
+  margin-bottom: 3px;
+}
+
+h4{
+  color: var(--marine-blue);
+  font-size: 1.6rem;
+  margin-bottom: 3px;
+}
+
+.description{
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.formContainer{
+  width: 100%;
+  background-color: var(--magnolia);
+  padding: 0 20px;
+  position: relative;
+  height: 500px;
+}
+
+.sub-container{
+  position: relative;
+  height: 500px;
+}
+
+.success .sub-container{
+  height: 300px;
+}
+
+form, .message{
+  padding: 25px 20px 15px;
+  background: var(--alabaster);
+  border-radius: 10px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -60px;
+}
+
+.message{
+  padding-top: 75px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.message img{
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.message p{
+  line-height: 1.5;
+}
+
+.step-des{
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background: var(--magnolia);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sub-main{
+    padding: 15px;
+    background-color: var(--white);
+    border-radius: 10px;
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+    height: 500px;
+  }
+
+  .step{
+    display: flex;
+    gap:  10px;
+  }
+
+  .step-des{
+    display: block;
+  }
+
+  .step-des p:first-child{
+    font-size: 1.3rem;
+  }
+
+  .step-des p:last-child{
+    color: var(--magnolia);
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+
+  form, .message{
+    background: var(--white);
+    border-radius: 0px;
+    margin: 0 auto;
+    width: 490px;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  .container {
+    width: 350px;
+    height: 100%;
+    flex-direction: column;
+    gap: 25px;
+    justify-content:left;
+    background-image: url(./assets/images/bg-sidebar-desktop.svg);
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-left: 25px;
+  }
+
+  .sub-container{
+    position: relative;
+    height: auto;
+  }
+
+  .formContainer{
+    width: 100%;
+    background-color: var(--white);
+    padding: 0 20px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .success .sub-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .message{
+    height: 200px;
+    padding: 0;
+  }
+
+  .buttons{
+    padding: 15px 20px;
+    width: 490px;
+    margin: 0 auto;
+  }
+  
+}
+
+
